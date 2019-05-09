@@ -21,4 +21,6 @@ services:
       ADMINER_PLUGINS: 'tables-filter tinymce'
     depends_on: 
       - mariadb
+    ports:
+      - 8080:8080
     
