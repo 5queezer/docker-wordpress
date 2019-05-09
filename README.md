@@ -1,5 +1,4 @@
 # Wordpress Docker Dev / Prod
-<hr />
 <div style="display: flex;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" height="64px"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Android_Emoji_2795.svg" height="64px">
