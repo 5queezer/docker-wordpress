@@ -13,4 +13,15 @@ services:
       - MARIADB_USER=bn_wordpress
       - MARIADB_DATABASE=bitnami_wordpress
       - ALLOW_EMPTY_PASSWORD=yes
-
+  git-sync:
+    image: openweb/git-sync:latest
+    environment:
+      GIT_SYNC_REPO: "git@gitlab.com:5queezer/advanced-booking-calendar.git"
+      GIT_SYNC_DEST: "/git"
+      GIT_SYNC_BRANCH: "master"
+      GIT_SYNC_REV: "FETCH_HEAD"
+      GIT_SYNC_WAIT: "900"
+    volumes:
+      - ./plugins/advanced-booking-calendar:/git:z
+      - ~/.ssh:/root/.ssh:ro
+    restart: always
