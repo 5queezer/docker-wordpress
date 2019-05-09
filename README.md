@@ -26,7 +26,7 @@ docker-compose up -d
 Open your browser at [http://localhost](http://localhost). The adminer is located at [http://localhost:8080](http://localhost:8080)
 
 ### Production environment
-For production the `.env` is necessary. Copy the sample file and modifiy the values. 
+For production the **.env** file is necessary. Copy the sample file and modifiy the values. 
 ```bash
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 ```
