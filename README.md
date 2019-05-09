@@ -5,7 +5,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Wordpress-logo-hoz-rgb.png" height="64px">
 </div>
 
-This is abBoilerplate with Docker Compose files for WordPress in two different environments:
+This is a Boilerplate with Docker Compose files for WordPress in two different environments:
 - local development with
     - [adminer](https://hub.docker.com/_/adminer/)
 - production environment with 
