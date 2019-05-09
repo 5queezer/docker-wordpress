@@ -14,26 +14,30 @@ This is a boilerplate with Docker Compose files for WordPress in two different e
     - [nginx-proxy](https://github.com/jwilder/nginx-proxy)
     - [letsencrypt-nginx-proxy-companion](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion).
 
-## Quick start
-### Installation
+# Quick start
+## Installation
 ```bash
 git clone git@github.com:5queezer/docker-wordpress.git
 cd docker-wordpress
 ```
 
-### Development environment
+## Development environment
 ```bash
 docker-compose up -d
 ```
 Open your browser at [http://localhost](http://localhost). The adminer is located at [http://localhost:8080](http://localhost:8080)
 
-### Production environment
+## Production environment
 For production the **.env** file is necessary. Copy the sample file and modifiy the values. 
 ```bash
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 ```
 
-## Add a theme from Git
+# Wordpress Credentials
+Use the Bitnami credentials. Username _user_, Passwort _bitnami_
+
+# Themes
+Add a theme from git as submodule:
 ```bash
 git submodule add git@github.com:WordPress/twentynineteen.git themes/twentynineteen
 ```
