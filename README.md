@@ -28,8 +28,6 @@ Open your browser at [http://localhost](http://localhost). The adminer is locate
 ### Production environment
 For production the `.env` is necessary. Copy the sample file and modifiy the values. 
 ```bash
-cp .env.sample .env
-nano .env
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 ```
 
