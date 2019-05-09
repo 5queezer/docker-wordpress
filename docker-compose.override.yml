@@ -1,0 +1,24 @@
+version: '2'
+services:
+  wordpress:
+    ports:
+      - '80:80'
+      - '443:443'
+    environment:
+      - WORDPRESS_DATABASE_USER=bn_wordpress
+      - WORDPRESS_DATABASE_NAME=bitnami_wordpress
+      - ALLOW_EMPTY_PASSWORD=yes
+  mariadb:
+    environment:
+      - MARIADB_USER=bn_wordpress
+      - MARIADB_DATABASE=bitnami_wordpress
+      - ALLOW_EMPTY_PASSWORD=yes
+  adminer:
+    image: adminer
+    restart: always
+    environment:
+      ADMINER_DEFAULT_SERVER: mariadb
+      ADMINER_PLUGINS: 'tables-filter tinymce'
+    depends_on: 
+      - mariadb
+    

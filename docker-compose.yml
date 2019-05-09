@@ -1,0 +1,22 @@
+version: '2'
+services:
+  mariadb:
+    image: 'bitnami/mariadb:latest'
+    volumes:
+      - 'mariadb_data:/bitnami'
+  wordpress:
+    image: 'bitnami/wordpress:5'
+    volumes:
+      - 'wordpress_data:/bitnami'
+      # - './themes/mytheme:/bitnami/wordpress/wp-content/themes/mytheme'
+      # - './plugins/myplugin:/bitnami/wordpress/wp-content/themes/myplugin'
+    depends_on:
+      - mariadb
+    environment:
+      - MARIADB_HOST=mariadb
+      - MARIADB_PORT_NUMBER=3306
+volumes:
+  mariadb_data:
+    driver: local
+  wordpress_data:
+    driver: local
