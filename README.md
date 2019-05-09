@@ -1,4 +1,6 @@
-# Wordpress Docker + Nginx-Proxy with Letsencrypt
+# Wordpress Docker
+Wordpress Docker with [Nginx-Proxy](https://hub.docker.com/r/jwilder/nginx-proxy) with the [Letsencrypt integration](https://hub.docker.com/r/jrcs/letsencrypt-nginx-proxy-companion/).
+
 <div style="display: flex;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" height="64px"/>
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Plus_symbol.svg" height="64px">
