@@ -13,6 +13,7 @@ services:
       - MARIADB_USER=bn_wordpress
       - MARIADB_DATABASE=bitnami_wordpress
       - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_PORT_NUMBER=3306
   adminer:
     image: adminer
     restart: always
